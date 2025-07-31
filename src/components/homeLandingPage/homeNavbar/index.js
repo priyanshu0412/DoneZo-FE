@@ -20,9 +20,9 @@ const HomeNavbar = () => {
         setdropDownArrow(false);
     };
 
-    const handleToggle = () => {
-        setIsMenuOpen(prev => !prev);
-    };
+    // const handleToggle = () => {
+    //     setIsMenuOpen(prev => !prev);
+    // };
 
     return (
         <>
@@ -112,8 +112,8 @@ const HomeNavbar = () => {
             {isMenuOpen && (
                 <>
                     {/* Overlay for focus and dimming background */}
-                    <div className="fixed inset-0 bg-black bg-opacity-40 z-40 transition-opacity duration-300"></div>
-                    <div className="fixed top-0 right-0 h-full w-4/5 max-w-xs bg-white shadow-lg z-50 animate-slideIn">
+                    <div className="fixed lg:hidden inset-0 bg-black bg-opacity-40 z-40 transition-opacity duration-300"></div>
+                    <div className="fixed lg:hidden top-0 right-0 h-full w-4/5 max-w-xs bg-white shadow-lg z-50 animate-slideIn">
                         {/* Close button on top right */}
                         <div className="flex justify-end p-4">
                             <button
