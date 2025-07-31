@@ -35,7 +35,7 @@ const HomeProjectSteps = () => {
                                 </TimelineDot>
                                 <TimelineConnector color="#9ca3af" sx={{ minHeight: '100px' }} />
                             </TimelineSeparator>
-                            <TimelineContent sx={{ py: '12px', px: 2, pt: 4, width: "600px" }}>
+                            <TimelineContent sx={{ py: '12px', px: 2, pt: 4 }}>
                                 <p className='text-fourthColor pl-4 text-xl font-bold'>
                                     Create Board
                                 </p>
