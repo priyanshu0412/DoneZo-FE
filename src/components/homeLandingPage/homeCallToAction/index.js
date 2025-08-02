@@ -6,7 +6,7 @@ import React from 'react'
 const HomeCallToAction = () => {
     return (
         <>
-            <div className='pt-28 pb-10 w-full flex justify-center items-center'>
+            <div className='pt-10 lg:pt-28 pb-10 w-full flex justify-center items-center'>
                 <div className='relative w-full h-[300px] border-2 border-b-2 bg-white border-t-2 border-black border-opacity-10'>
                     <Particles
                         particleColors={['#1f2937', '#000000']}

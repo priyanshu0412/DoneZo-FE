@@ -18,7 +18,7 @@ const HomeCompanySection = () => {
     ];
 
     return (
-        <div className='w-full bg-fifthColor flex justify-center items-center mt-20 mb-10 overflow-hidden'>
+        <div className='w-full bg-fifthColor flex justify-center items-center mt-0 mb-10 overflow-hidden'>
             <div className='w-full flex flex-col justify-center items-center pb-10'>
                 <div className='py-12 flex flex-col justify-center items-center px-8 lg:px-0'>
                     <h1 className='text-2xl sm:text-4xl font-bold text-black'>
