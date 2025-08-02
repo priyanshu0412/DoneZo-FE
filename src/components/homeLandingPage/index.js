@@ -6,6 +6,7 @@ import HomeFeatureSection from './homeFeatureSection'
 import HomeProjectSteps from './homeStepsProject'
 import HomeCompanySection from './homeCompanySection'
 import HomeCallToAction from './homeCallToAction'
+import HomeFooter from './homeFooter'
 import "../../app/style/homeLanding.css"
 
 // -------------------------------------------
@@ -19,6 +20,7 @@ const HomePage = () => {
             <HomeCallToAction />
             <HomeProjectSteps />
             <HomeCompanySection />
+            <HomeFooter />
         </>
     )
 }
