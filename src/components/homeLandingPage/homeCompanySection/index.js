@@ -21,10 +21,10 @@ const HomeCompanySection = () => {
         <div className='w-full bg-fifthColor flex justify-center items-center mt-20 mb-10 overflow-hidden'>
             <div className='w-full flex flex-col justify-center items-center pb-10'>
                 <div className='py-12 flex flex-col justify-center items-center px-8 lg:px-0'>
-                    <h1 className='text-4xl font-bold text-black'>
+                    <h1 className='text-2xl sm:text-4xl font-bold text-black'>
                         Proudly Partnered With
                     </h1>
-                    <p className="text-gray-500 text-lg pt-2">
+                    <p className="text-base text-center text-gray-500 sm:text-lg pt-2">
                         We are proud to be associated with these amazing brands
                     </p>
 

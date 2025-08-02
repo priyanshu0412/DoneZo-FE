@@ -3,9 +3,10 @@ import React from 'react'
 import HomeNavbar from './homeNavbar'
 import HomeHeroSection from './heroSection'
 import HomeFeatureSection from './homeFeatureSection'
-import "../../app/style/homeLanding.css"
 import HomeProjectSteps from './homeStepsProject'
 import HomeCompanySection from './homeCompanySection'
+import HomeCallToAction from './homeCallToAction'
+import "../../app/style/homeLanding.css"
 
 // -------------------------------------------
 
@@ -15,8 +16,9 @@ const HomePage = () => {
             <HomeNavbar />
             <HomeHeroSection />
             <HomeFeatureSection />
-            <HomeCompanySection />
+            <HomeCallToAction />
             <HomeProjectSteps />
+            <HomeCompanySection />
         </>
     )
 }
