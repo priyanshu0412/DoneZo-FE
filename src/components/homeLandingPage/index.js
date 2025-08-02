@@ -5,6 +5,7 @@ import HomeHeroSection from './heroSection'
 import HomeFeatureSection from './homeFeatureSection'
 import "../../app/style/homeLanding.css"
 import HomeProjectSteps from './homeStepsProject'
+import HomeCompanySection from './homeCompanySection'
 
 // -------------------------------------------
 
@@ -14,6 +15,7 @@ const HomePage = () => {
             <HomeNavbar />
             <HomeHeroSection />
             <HomeFeatureSection />
+            <HomeCompanySection />
             <HomeProjectSteps />
         </>
     )

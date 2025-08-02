@@ -1,2 +1,7 @@
 export { default as DoneZoLogo } from "./DoneZoLogo.png"
 export { default as HomeHeroSectoion } from "./heoSection.png"
+export { default as Comp1 } from "./comp-1.png"
+export { default as Comp2 } from "./comp-2.png"
+export { default as Comp3 } from "./comp-3.png"
+export { default as Comp5 } from "./comp-5.png"
+export { default as Comp6 } from "./comp-6.png"

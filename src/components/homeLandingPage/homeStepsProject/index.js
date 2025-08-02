@@ -27,7 +27,7 @@ const HomeProjectSteps = () => {
                         {/* Step 1 */}
                         <TimelineItem>
                             <TimelineOppositeContent sx={{ paddingTop: "38px" }}>
-                                <p className="text-thirdColor font-semibold text-xl sm:pr-2">
+                                <p className="text-thirdColor pr-2 font-semibold text-xl">
                                     Step 1
                                 </p>
                             </TimelineOppositeContent>
@@ -51,7 +51,7 @@ const HomeProjectSteps = () => {
                         {/* Step 2 */}
                         <TimelineItem>
                             <TimelineOppositeContent sx={{ paddingTop: isMobile ? "16px" : "28px" }}>
-                                <p className="text-thirdColor font-semibold text-xl pl-2">
+                                <p className="text-thirdColor pl-0 pr-2 sm:pr-0 font-semibold text-xl sm:pl-2">
                                     Step 2
                                 </p>
                             </TimelineOppositeContent>
@@ -80,7 +80,7 @@ const HomeProjectSteps = () => {
                         {/* Step 3 */}
                         <TimelineItem>
                             <TimelineOppositeContent sx={{ paddingTop: isMobile ? "18px" : "32px" }} align="right">
-                                <p className="text-thirdColor sm:pr-2 font-semibold text-xl ">
+                                <p className="text-thirdColor pr-2 font-semibold text-xl">
                                     Step 3
                                 </p>
                             </TimelineOppositeContent>
@@ -108,7 +108,7 @@ const HomeProjectSteps = () => {
                         {/* Step 4 */}
                         <TimelineItem>
                             <TimelineOppositeContent sx={{ paddingTop: isMobile ? "20px" : "28px" }} align="right">
-                                <p className="text-thirdColor font-semibold text-xl pl-2">
+                                <p className="text-thirdColor font-semibold text-xl pr-2 sm:pr-0 pl-0 sm:pl-2">
                                     Step 4
                                 </p>
                             </TimelineOppositeContent>

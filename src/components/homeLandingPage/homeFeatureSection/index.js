@@ -9,8 +9,8 @@ const HomeFeatureSection = () => {
     return (
         <>
             <div className='w-full flex flex-col justify-center items-center'>
-                <div className='pb-8'>
-                    <h1 className='text-6xl font-bold text-thirdColor'>
+                <div className='pb-8 pt-20'>
+                    <h1 className='text-5xl md:text-6xl font-bold text-thirdColor'>
                         Services
                     </h1>
                 </div>
