@@ -1,3 +1,4 @@
+"use client"
 import { HomeHeroSectoion } from '@/asset'
 import { BlurText } from '@/components/reactDevBits'
 import Image from 'next/image'

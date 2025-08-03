@@ -1,8 +1,10 @@
+"use client"
 import { DoneZoLogo } from '@/asset'
 import Icon from '@/components/icon'
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Turn as Hamburger } from 'hamburger-react'
+import Link from 'next/link'
 
 // -----------------------------------------------------------
 
@@ -11,6 +13,20 @@ const HomeNavbar = () => {
     const [dropDownArrow, setdropDownArrow] = useState(false)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
+    useEffect(() => {
+        if (isMenuOpen) {
+            // Disable scroll
+            document.body.style.overflow = 'hidden';
+        } else {
+            // Enable scroll
+            document.body.style.overflow = 'auto';
+        }
+
+        // Cleanup jab component unmount ho ya effect dobara run ho
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [isMenuOpen]);
 
     const OnHandleDropdown = () => {
         setdropDownArrow(true)
@@ -41,7 +57,7 @@ const HomeNavbar = () => {
                                 onMouseLeave={OnHandleDropdownLeave} >
                                 Feature <Icon icon={"gridicons:dropdown"} rotate={dropDownArrow && 90} width={20} />
                             </li>
-                            <li className='hover:font-semibold hover:text-thirdColor'>Price</li>
+                            <li className='hover:font-semibold hover:text-thirdColor'> <Link href="/pricing"> Price</Link></li>
                             <li className='hover:font-semibold hover:text-thirdColor'>About</li>
                             <li className='hover:font-semibold hover:text-thirdColor'>Contact</li>
                         </ul>
@@ -146,7 +162,7 @@ const HomeNavbar = () => {
                                     </button>
                                 </div>
                             </div>
-                            <button className="text-lg font-semibold text-end text-gray-700 hover:text-indigo-600 transition">Price</button>
+                            <button className="text-lg font-semibold text-end text-gray-700 hover:text-indigo-600 transition"><Link href='/pricing' onClick={() => setIsMenuOpen(false)} > Price </Link></button>
                             <button className="text-lg font-semibold text-end text-gray-700 hover:text-indigo-600 transition">About</button>
                             <button className="text-lg font-semibold text-end text-gray-700 hover:text-indigo-600 transition">Contact</button>
                         </nav>

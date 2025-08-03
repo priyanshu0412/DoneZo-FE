@@ -1,3 +1,4 @@
+"use client"
 import Icon from '@/components/icon'
 import { SpotLightCard } from '@/components/reactDevBits'
 import serviceData from '@/data/serviceData'

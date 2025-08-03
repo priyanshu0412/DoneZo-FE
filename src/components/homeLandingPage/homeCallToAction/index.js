@@ -1,3 +1,4 @@
+"use client"
 import Particles from '@/components/reactDevBits/particles'
 import React from 'react'
 
