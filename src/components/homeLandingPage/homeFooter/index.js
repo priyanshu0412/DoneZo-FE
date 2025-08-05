@@ -37,18 +37,22 @@ const HomeFooter = () => {
                             <h1 className='pb-2 font-bold'>
                                 Quick Links
                             </h1>
-                            <p>Home</p>
-                            <p>Feature</p>
-                            <p>Pricing</p>
-                            <p>Contact</p>
+                            <div className='pt-4 flex flex-col gap-2'>
+                                <p>Home</p>
+                                <p>Feature</p>
+                                <p>Pricing</p>
+                                <p>Contact</p>
+                            </div>
                         </div>
                         <div>
                             <h1 className='pb-2 font-bold'>
                                 Support
                             </h1>
-                            <p>Help Center</p>
-                            <p>Privacy Policy</p>
-                            <p>Terms & Conditions</p>
+                            <div className='pt-4 flex flex-col gap-2'>
+                                <p>Help Center</p>
+                                <p>Privacy Policy</p>
+                                <p>Terms & Conditions</p>
+                            </div>
                         </div>
                     </div>
                     <div className="w-full lg:w-[250px] xl:w-[300px] bg-white rounded-2xl shadow-lg p-6 flex flex-col gap-y-5 border border-gray-100">

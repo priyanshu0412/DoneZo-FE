@@ -59,7 +59,7 @@ const HomeNavbar = () => {
                             </li>
                             <li className='hover:font-semibold hover:text-thirdColor'> <Link href="/pricing"> Price</Link></li>
                             <li className='hover:font-semibold hover:text-thirdColor'>About</li>
-                            <li className='hover:font-semibold hover:text-thirdColor'>Contact</li>
+                            <li className='hover:font-semibold hover:text-thirdColor'> <Link href="/contact-us"> Contact </Link></li>
                         </ul>
                     </div>
 
@@ -164,7 +164,7 @@ const HomeNavbar = () => {
                             </div>
                             <button className="text-lg font-semibold text-end text-gray-700 hover:text-indigo-600 transition"><Link href='/pricing' onClick={() => setIsMenuOpen(false)} > Price </Link></button>
                             <button className="text-lg font-semibold text-end text-gray-700 hover:text-indigo-600 transition">About</button>
-                            <button className="text-lg font-semibold text-end text-gray-700 hover:text-indigo-600 transition">Contact</button>
+                            <button className="text-lg font-semibold text-end text-gray-700 hover:text-indigo-600 transition"> <Link href="/contact-us" onClick={() => setIsMenuOpen(false)}> Contact </Link></button>
                         </nav>
                     </div>
                     <style jsx>{`

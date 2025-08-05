@@ -72,7 +72,7 @@ const HomePricingPage = () => {
     return (
         <>
             <div className="w-full flex justify-center py-16 bg-[#1F2937]">
-                <div className="max-w-[1200px] w-full mx-auto flex flex-col lg:flex-row gap-9 px-8 lg:px-0">
+                <div className="max-w-[1200px] w-full mx-auto flex flex-col lg:flex-row gap-9 px-8 xl:px-0">
                     {plans.map((plan, idx) => (
                         <div
                             key={plan.title}
