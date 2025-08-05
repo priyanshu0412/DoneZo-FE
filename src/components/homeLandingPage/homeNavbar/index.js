@@ -64,9 +64,11 @@ const HomeNavbar = () => {
 
                     {/* button  */}
                     <div>
-                        <button className='px-8 py-2 rounded-full hover:bg-seventhColor hover:text-white bg-eightthColor text-white font-medium'>
-                            Get Start
-                        </button>
+                        <Link className='w-fit' href="/get-started">
+                            <button className='px-8 py-2 rounded-full hover:bg-seventhColor hover:text-white bg-eightthColor text-white font-medium'>
+                                Get Start
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>
