@@ -12,7 +12,7 @@ const HomeContactUsPage = () => {
         <div className="w-full flex justify-center items-center py-16 min-h-[80vh] bg-sixthColor">
             <div className="max-w-[1200px] w-full mx-auto flex flex-col xl:flex-row gap-14 px-8 xl:px-0">
                 {/* Left: Form Card */}
-                <div className="flex-1 bg-white/90 rounded-3xl shadow-2xl border border-gray-200 p-8 sm:p-10 flex flex-col justify-center">
+                <div className="flex-1 bg-white rounded-3xl shadow-2xl border border-gray-200 p-8 sm:p-10 flex flex-col justify-center">
                     <h1 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800 tracking-tight">
                         Contact Us
                     </h1>
