@@ -1,3 +1,4 @@
+"use client"
 import HomeContactUsPage from '@/components/homeLandingPage/homeContactUs'
 import React from 'react'
 

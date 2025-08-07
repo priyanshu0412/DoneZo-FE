@@ -42,36 +42,42 @@ const HomeNavbar = () => {
 
     return (
         <>
-            <div className='lg:flex w-full justify-center items-center bg-white hidden lg:px-8 xl:px-0'>
-                <div className='max-w-[1200px] w-full flex justify-between items-center h-[80px]'>
+            <div className=' sticky top-0 z-[99] lg:flex w-full justify-center items-center hidden lg:px-8 xl:px-0'>
+                <div className='max-w-[1200px] w-full flex bg-white justify-between items-center h-[70px] px-6 rounded-full shadow-md border border-gray-100 mt-4'>
                     {/* Logo  */}
-                    <div>
+                    <div className='flex items-center'>
                         <Image src={DoneZoLogo} alt='Logo' height={120} width={120} />
                     </div>
 
                     {/* Navigation  */}
                     <div className='h-full flex justify-center items-center'>
-                        <ul className='flex h-full gap-8 items-center [&>li]:h-full [&>li]:flex [&>li]:justify-center [&>li]:items-center  [&>li]:text-md [&>li]:cursor-pointer'>
-                            <li className='hover:font-semibold hover:text-thirdColor flex justify-center items-center gap-2'
+                        <ul className='flex h-full gap-6 items-center text-gray-700 font-medium [&>li]:cursor-pointer'>
+                            <li className='hover:text-thirdColor transition-colors flex justify-center items-center gap-2 relative'
                                 onMouseEnter={OnHandleDropdown}
-                                onMouseLeave={OnHandleDropdownLeave} >
-                                Feature <Icon icon={"gridicons:dropdown"} rotate={dropDownArrow && 90} width={20} />
+                                onMouseLeave={OnHandleDropdownLeave}>
+                                Feature
+                                <Icon icon={"gridicons:dropdown"} rotate={dropDownArrow && 90} width={18} />
                             </li>
-                            <li className='hover:font-semibold hover:text-thirdColor'> <Link href="/pricing"> Price</Link></li>
-                            <li className='hover:font-semibold hover:text-thirdColor'> <Link href="/contact-us"> Contact </Link></li>
+                            <li className='hover:text-thirdColor transition-colors'>
+                                <Link href="/pricing">Price</Link>
+                            </li>
+                            <li className='hover:text-thirdColor transition-colors'>
+                                <Link href="/contact-us">Contact</Link>
+                            </li>
                         </ul>
                     </div>
 
-                    {/* button  */}
+                    {/* Button  */}
                     <div>
                         <Link className='w-fit' href="/get-started">
-                            <button className='px-8 py-2 rounded-full hover:bg-seventhColor hover:text-white bg-eightthColor text-white font-medium'>
+                            <button className='px-6 py-2 rounded-full bg-eightthColor text-white font-medium hover:bg-seventhColor transition-all duration-300 shadow-md'>
                                 Get Start
                             </button>
                         </Link>
                     </div>
                 </div>
             </div>
+
             {dropDownArrow &&
                 (
                     <div

@@ -1,3 +1,4 @@
+"use client"
 import HomePricingPage from '@/components/homeLandingPage/homePricingPage'
 import React from 'react'
 

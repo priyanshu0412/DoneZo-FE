@@ -7,28 +7,44 @@ import React from 'react'
 // ---------------------------------------------------
 
 const HomeHeroSection = () => {
-
     return (
         <>
             <div className='w-full flex justify-center items-center'>
-                <div className='max-w-[1200px] w-full py-8 flex flex-col-reverse md:flex-row justify-between items-center lg:px-8 xl:px-0 px-8'>
-                    <div className='w-full lg:w-[60%]'>
-                        <div className='text-white text-2xl lg:text-2xl leading-[3.5rem] lg:leading-[5.5rem] font-bold gap-2'>
+                <div className='max-w-[1200px] w-full py-20 flex flex-col-reverse md:flex-row justify-between items-center lg:px-8 xl:px-0 px-6 gap-10'>
+
+                    {/* Left Content */}
+                    <div className='w-full lg:w-[55%] flex flex-col gap-6'>
+                        <div className='text-white font-bold'>
                             <BlurText
-                                text="Donezo"
+                                text="Manage tasks. Lead teams. Get more done with Donezo."
                                 delay={150}
                                 animateBy="words"
                                 direction="top"
-                                className="text-6xl lg:text-7xl text-thirdColor"
+                                className="text-4xl lg:text-5xl xl:text-5xl text-thirdColor !leading-[3.5rem]"
                             />
-                            <span>Less stress, more done. Welcome to Donezo.</span>
-                            <br />
-                            <button className='text-sm bg-thirdColor text-firstColor px-8 py-2 rounded-full  hover:bg-fourthColor'>Start Now</button>
+                        </div>
+                        <p className='text-gray-200 text-base lg:text-lg leading-relaxed'>
+                            Donezo is your all-in-one workspace to plan projects, assign tasks,
+                            and track progress with ease. Designed for modern teams who value
+                            simplicity and speed.
+                        </p>
+                        <div>
+                            <button className='text-sm lg:text-base bg-thirdColor text-firstColor px-8 py-3 rounded-full hover:bg-fourthColor transition-all duration-300 shadow-md'>
+                                Start Now
+                            </button>
                         </div>
                     </div>
+
+                    {/* Right Image */}
                     <div className='w-full lg:w-[40%]'>
-                        <Image src={HomeHeroSectoion} className='w-full h-full' alt='...' />
+                        <Image
+                            src={HomeHeroSectoion}
+                            className='w-full h-auto object-cover'
+                            alt='Donezo dashboard preview'
+                            priority
+                        />
                     </div>
+
                 </div>
             </div>
         </>

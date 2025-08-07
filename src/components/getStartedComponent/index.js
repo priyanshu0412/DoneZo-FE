@@ -1,4 +1,5 @@
 "use client"
+import { SignUpPageImg } from '@/asset'
 import Image from 'next/image'
 import React from 'react'
 
@@ -19,7 +20,7 @@ const GetStartedComponent = () => {
                     </p>
                     {/* Dummy Illustration */}
                     <Image
-                        src="https://via.placeholder.com/350x200?text=Team+Illustration"
+                        src={SignUpPageImg.src}
                         alt="Team working illustration"
                         className="rounded-md max-w-full"
                         height={300}
